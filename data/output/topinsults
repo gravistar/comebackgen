@@ -1,0 +1,774 @@
+STARTING TREE EXPLORATION
+Node 0 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ROOT ValueAnnotation=ROOT] Phrasal? true Terminal? false
+Node 1 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 2 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 3 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 4 has label [TextAnnotation=null PartOfSpeechAnnotation=. CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=. ValueAnnotation=.] Phrasal? false Terminal? false
+Node 5 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP$ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP$ ValueAnnotation=PRP$] Phrasal? false Terminal? false
+Node 6 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 7 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 8 has label [TextAnnotation=null PartOfSpeechAnnotation=VBZ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBZ ValueAnnotation=VBZ] Phrasal? false Terminal? false
+Node 9 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 10 has label [ValueAnnotation=. TextAnnotation=. CharacterOffsetBeginAnnotation=60 CharacterOffsetEndAnnotation=61] Phrasal? false Terminal? true
+Node 11 has label [ValueAnnotation=Your TextAnnotation=Your CharacterOffsetBeginAnnotation=0 CharacterOffsetEndAnnotation=4] Phrasal? false Terminal? true
+Node 12 has label [ValueAnnotation=birth TextAnnotation=birth CharacterOffsetBeginAnnotation=5 CharacterOffsetEndAnnotation=10] Phrasal? false Terminal? true
+Node 13 has label [ValueAnnotation=certificate TextAnnotation=certificate CharacterOffsetBeginAnnotation=11 CharacterOffsetEndAnnotation=22] Phrasal? false Terminal? true
+Node 14 has label [ValueAnnotation=is TextAnnotation=is CharacterOffsetBeginAnnotation=23 CharacterOffsetEndAnnotation=25] Phrasal? false Terminal? true
+Node 15 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 16 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PP ValueAnnotation=PP] Phrasal? true Terminal? false
+Node 17 has label [TextAnnotation=null PartOfSpeechAnnotation=DT CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=DT ValueAnnotation=DT] Phrasal? false Terminal? false
+Node 18 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 19 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 20 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 21 has label [ValueAnnotation=an TextAnnotation=an CharacterOffsetBeginAnnotation=26 CharacterOffsetEndAnnotation=28] Phrasal? false Terminal? true
+Node 22 has label [ValueAnnotation=apology TextAnnotation=apology CharacterOffsetBeginAnnotation=29 CharacterOffsetEndAnnotation=36] Phrasal? false Terminal? true
+Node 23 has label [ValueAnnotation=from TextAnnotation=from CharacterOffsetBeginAnnotation=37 CharacterOffsetEndAnnotation=41] Phrasal? false Terminal? true
+Node 24 has label [TextAnnotation=null PartOfSpeechAnnotation=DT CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=DT ValueAnnotation=DT] Phrasal? false Terminal? false
+Node 25 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 26 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 27 has label [ValueAnnotation=the TextAnnotation=the CharacterOffsetBeginAnnotation=42 CharacterOffsetEndAnnotation=45] Phrasal? false Terminal? true
+Node 28 has label [ValueAnnotation=condom TextAnnotation=condom CharacterOffsetBeginAnnotation=46 CharacterOffsetEndAnnotation=52] Phrasal? false Terminal? true
+Node 29 has label [ValueAnnotation=factory TextAnnotation=factory CharacterOffsetBeginAnnotation=53 CharacterOffsetEndAnnotation=60] Phrasal? false Terminal? true
+DONE WITH TREE EXPLORATION
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN birth) (NN certificate))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN apology))
+        (PP (IN from)
+          (NP (DT the) (NN condom) (NN factory)))))
+    (. .)))
+
+[poss(certificate-3, Your-1), nn(certificate-3, birth-2), nsubj(apology-6, certificate-3), cop(apology-6, is-4), det(apology-6, an-5), root(ROOT-0, apology-6), det(factory-10, the-8), nn(factory-10, condom-9), prep_from(apology-6, factory-10)](ROOT
+  (S
+    (NP (PRP$ Your) (NN birth) (NN certificate))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN apology))
+        (PP (IN from)
+          (NP (DT the) (NN condom) (NN factory)))))
+    (. .)))
+
+poss(certificate-3, Your-1)
+nn(certificate-3, birth-2)
+nsubj(apology-6, certificate-3)
+cop(apology-6, is-4)
+det(apology-6, an-5)
+root(ROOT-0, apology-6)
+det(factory-10, the-8)
+nn(factory-10, condom-9)
+prep_from(apology-6, factory-10)
+
+
+STARTING TREE EXPLORATION
+Node 0 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ROOT ValueAnnotation=ROOT] Phrasal? true Terminal? false
+Node 1 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 2 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 3 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 4 has label [TextAnnotation=null PartOfSpeechAnnotation=. CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=. ValueAnnotation=.] Phrasal? false Terminal? false
+Node 5 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 6 has label [TextAnnotation=null PartOfSpeechAnnotation=MD CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=MD ValueAnnotation=MD] Phrasal? false Terminal? false
+Node 7 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ADVP ValueAnnotation=ADVP] Phrasal? true Terminal? false
+Node 8 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 9 has label [ValueAnnotation=. TextAnnotation=. CharacterOffsetBeginAnnotation=38 CharacterOffsetEndAnnotation=39] Phrasal? false Terminal? true
+Node 10 has label [ValueAnnotation=You TextAnnotation=You CharacterOffsetBeginAnnotation=0 CharacterOffsetEndAnnotation=3] Phrasal? false Terminal? true
+Node 11 has label [ValueAnnotation='ll TextAnnotation='ll CharacterOffsetBeginAnnotation=3 CharacterOffsetEndAnnotation=6] Phrasal? false Terminal? true
+Node 12 has label [TextAnnotation=null PartOfSpeechAnnotation=RB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=RB ValueAnnotation=RB] Phrasal? false Terminal? false
+Node 13 has label [TextAnnotation=null PartOfSpeechAnnotation=VB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VB ValueAnnotation=VB] Phrasal? false Terminal? false
+Node 14 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 15 has label [ValueAnnotation=never TextAnnotation=never CharacterOffsetBeginAnnotation=7 CharacterOffsetEndAnnotation=12] Phrasal? false Terminal? true
+Node 16 has label [ValueAnnotation=be TextAnnotation=be CharacterOffsetBeginAnnotation=13 CharacterOffsetEndAnnotation=15] Phrasal? false Terminal? true
+Node 17 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 18 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=SBAR ValueAnnotation=SBAR] Phrasal? true Terminal? false
+Node 19 has label [TextAnnotation=null PartOfSpeechAnnotation=DT CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=DT ValueAnnotation=DT] Phrasal? false Terminal? false
+Node 20 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 21 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 22 has label [ValueAnnotation=the TextAnnotation=the CharacterOffsetBeginAnnotation=16 CharacterOffsetEndAnnotation=19] Phrasal? false Terminal? true
+Node 23 has label [ValueAnnotation=man TextAnnotation=man CharacterOffsetBeginAnnotation=20 CharacterOffsetEndAnnotation=23] Phrasal? false Terminal? true
+Node 24 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 25 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 26 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP$ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP$ ValueAnnotation=PRP$] Phrasal? false Terminal? false
+Node 27 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 28 has label [TextAnnotation=null PartOfSpeechAnnotation=VBZ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBZ ValueAnnotation=VBZ] Phrasal? false Terminal? false
+Node 29 has label [ValueAnnotation=your TextAnnotation=your CharacterOffsetBeginAnnotation=24 CharacterOffsetEndAnnotation=28] Phrasal? false Terminal? true
+Node 30 has label [ValueAnnotation=mother TextAnnotation=mother CharacterOffsetBeginAnnotation=29 CharacterOffsetEndAnnotation=35] Phrasal? false Terminal? true
+Node 31 has label [ValueAnnotation=is TextAnnotation=is CharacterOffsetBeginAnnotation=36 CharacterOffsetEndAnnotation=38] Phrasal? false Terminal? true
+DONE WITH TREE EXPLORATION
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD 'll)
+      (ADVP (RB never))
+      (VP (VB be)
+        (NP
+          (NP (DT the) (NN man))
+          (SBAR
+            (S
+              (NP (PRP$ your) (NN mother))
+              (VP (VBZ is)))))))
+    (. .)))
+
+[nsubj(man-6, You-1), aux(man-6, 'll-2), neg(man-6, never-3), cop(man-6, be-4), det(man-6, the-5), root(ROOT-0, man-6), poss(mother-8, your-7), nsubj(is-9, mother-8), rcmod(man-6, is-9)](ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD 'll)
+      (ADVP (RB never))
+      (VP (VB be)
+        (NP
+          (NP (DT the) (NN man))
+          (SBAR
+            (S
+              (NP (PRP$ your) (NN mother))
+              (VP (VBZ is)))))))
+    (. .)))
+
+nsubj(man-6, You-1)
+aux(man-6, 'll-2)
+neg(man-6, never-3)
+cop(man-6, be-4)
+det(man-6, the-5)
+root(ROOT-0, man-6)
+poss(mother-8, your-7)
+nsubj(is-9, mother-8)
+rcmod(man-6, is-9)
+
+
+STARTING TREE EXPLORATION
+Node 0 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ROOT ValueAnnotation=ROOT] Phrasal? true Terminal? false
+Node 1 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 2 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 3 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 4 has label [TextAnnotation=null PartOfSpeechAnnotation=. CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=. ValueAnnotation=.] Phrasal? false Terminal? false
+Node 5 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 6 has label [TextAnnotation=null PartOfSpeechAnnotation=MD CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=MD ValueAnnotation=MD] Phrasal? false Terminal? false
+Node 7 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 8 has label [ValueAnnotation=. TextAnnotation=. CharacterOffsetBeginAnnotation=81 CharacterOffsetEndAnnotation=82] Phrasal? false Terminal? true
+Node 9 has label [ValueAnnotation=You TextAnnotation=You CharacterOffsetBeginAnnotation=0 CharacterOffsetEndAnnotation=3] Phrasal? false Terminal? true
+Node 10 has label [ValueAnnotation=must TextAnnotation=must CharacterOffsetBeginAnnotation=4 CharacterOffsetEndAnnotation=8] Phrasal? false Terminal? true
+Node 11 has label [TextAnnotation=null PartOfSpeechAnnotation=VB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VB ValueAnnotation=VB] Phrasal? false Terminal? false
+Node 12 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 13 has label [ValueAnnotation=have TextAnnotation=have CharacterOffsetBeginAnnotation=9 CharacterOffsetEndAnnotation=13] Phrasal? false Terminal? true
+Node 14 has label [TextAnnotation=null PartOfSpeechAnnotation=VBN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBN ValueAnnotation=VBN] Phrasal? false Terminal? false
+Node 15 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 16 has label [ValueAnnotation=been TextAnnotation=been CharacterOffsetBeginAnnotation=14 CharacterOffsetEndAnnotation=18] Phrasal? false Terminal? true
+Node 17 has label [TextAnnotation=null PartOfSpeechAnnotation=VBN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBN ValueAnnotation=VBN] Phrasal? false Terminal? false
+Node 18 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PP ValueAnnotation=PP] Phrasal? true Terminal? false
+Node 19 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=SBAR ValueAnnotation=SBAR] Phrasal? true Terminal? false
+Node 20 has label [ValueAnnotation=born TextAnnotation=born CharacterOffsetBeginAnnotation=19 CharacterOffsetEndAnnotation=23] Phrasal? false Terminal? true
+Node 21 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 22 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 23 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 24 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 25 has label [ValueAnnotation=on TextAnnotation=on CharacterOffsetBeginAnnotation=24 CharacterOffsetEndAnnotation=26] Phrasal? false Terminal? true
+Node 26 has label [TextAnnotation=null PartOfSpeechAnnotation=DT CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=DT ValueAnnotation=DT] Phrasal? false Terminal? false
+Node 27 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 28 has label [ValueAnnotation=because TextAnnotation=because CharacterOffsetBeginAnnotation=39 CharacterOffsetEndAnnotation=46] Phrasal? false Terminal? true
+Node 29 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 30 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 31 has label [ValueAnnotation=the TextAnnotation=the CharacterOffsetBeginAnnotation=27 CharacterOffsetEndAnnotation=30] Phrasal? false Terminal? true
+Node 32 has label [ValueAnnotation=highway TextAnnotation=highway CharacterOffsetBeginAnnotation=31 CharacterOffsetEndAnnotation=38] Phrasal? false Terminal? true
+Node 33 has label [TextAnnotation=null PartOfSpeechAnnotation=DT CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=DT ValueAnnotation=DT] Phrasal? false Terminal? false
+Node 34 has label [TextAnnotation=null PartOfSpeechAnnotation=VBZ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBZ ValueAnnotation=VBZ] Phrasal? false Terminal? false
+Node 35 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=SBAR ValueAnnotation=SBAR] Phrasal? true Terminal? false
+Node 36 has label [ValueAnnotation=that TextAnnotation=that CharacterOffsetBeginAnnotation=47 CharacterOffsetEndAnnotation=51] Phrasal? false Terminal? true
+Node 37 has label [ValueAnnotation='s TextAnnotation='s CharacterOffsetBeginAnnotation=51 CharacterOffsetEndAnnotation=53] Phrasal? false Terminal? true
+Node 38 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=WHADVP ValueAnnotation=WHADVP] Phrasal? true Terminal? false
+Node 39 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 40 has label [TextAnnotation=null PartOfSpeechAnnotation=WRB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=WRB ValueAnnotation=WRB] Phrasal? false Terminal? false
+Node 41 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 42 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 43 has label [ValueAnnotation=where TextAnnotation=where CharacterOffsetBeginAnnotation=54 CharacterOffsetEndAnnotation=59] Phrasal? false Terminal? true
+Node 44 has label [TextAnnotation=null PartOfSpeechAnnotation=JJS CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=JJS ValueAnnotation=JJS] Phrasal? false Terminal? false
+Node 45 has label [TextAnnotation=null PartOfSpeechAnnotation=NNS CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NNS ValueAnnotation=NNS] Phrasal? false Terminal? false
+Node 46 has label [TextAnnotation=null PartOfSpeechAnnotation=VBP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBP ValueAnnotation=VBP] Phrasal? false Terminal? false
+Node 47 has label [ValueAnnotation=most TextAnnotation=most CharacterOffsetBeginAnnotation=60 CharacterOffsetEndAnnotation=64] Phrasal? false Terminal? true
+Node 48 has label [ValueAnnotation=accidents TextAnnotation=accidents CharacterOffsetBeginAnnotation=65 CharacterOffsetEndAnnotation=74] Phrasal? false Terminal? true
+Node 49 has label [ValueAnnotation=happen TextAnnotation=happen CharacterOffsetBeginAnnotation=75 CharacterOffsetEndAnnotation=81] Phrasal? false Terminal? true
+DONE WITH TREE EXPLORATION
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD must)
+      (VP (VB have)
+        (VP (VBN been)
+          (VP (VBN born)
+            (PP (IN on)
+              (NP (DT the) (NN highway)))
+            (SBAR (IN because)
+              (S
+                (NP (DT that))
+                (VP (VBZ 's)
+                  (SBAR
+                    (WHADVP (WRB where))
+                    (S
+                      (NP (JJS most) (NNS accidents))
+                      (VP (VBP happen)))))))))))
+    (. .)))
+
+[nsubjpass(born-5, You-1), aux(born-5, must-2), aux(born-5, have-3), auxpass(born-5, been-4), root(ROOT-0, born-5), det(highway-8, the-7), prep_on(born-5, highway-8), mark('s-11, because-9), nsubj('s-11, that-10), advcl(born-5, 's-11), advmod(happen-15, where-12), amod(accidents-14, most-13), nsubj(happen-15, accidents-14), advcl('s-11, happen-15)](ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD must)
+      (VP (VB have)
+        (VP (VBN been)
+          (VP (VBN born)
+            (PP (IN on)
+              (NP (DT the) (NN highway)))
+            (SBAR (IN because)
+              (S
+                (NP (DT that))
+                (VP (VBZ 's)
+                  (SBAR
+                    (WHADVP (WRB where))
+                    (S
+                      (NP (JJS most) (NNS accidents))
+                      (VP (VBP happen)))))))))))
+    (. .)))
+
+nsubjpass(born-5, You-1)
+aux(born-5, must-2)
+aux(born-5, have-3)
+auxpass(born-5, been-4)
+root(ROOT-0, born-5)
+det(highway-8, the-7)
+prep_on(born-5, highway-8)
+mark('s-11, because-9)
+nsubj('s-11, that-10)
+advcl(born-5, 's-11)
+advmod(happen-15, where-12)
+amod(accidents-14, most-13)
+nsubj(happen-15, accidents-14)
+advcl('s-11, happen-15)
+
+
+STARTING TREE EXPLORATION
+Node 0 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ROOT ValueAnnotation=ROOT] Phrasal? true Terminal? false
+Node 1 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 2 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 3 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 4 has label [TextAnnotation=null PartOfSpeechAnnotation=. CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=. ValueAnnotation=.] Phrasal? false Terminal? false
+Node 5 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 6 has label [TextAnnotation=null PartOfSpeechAnnotation=VBZ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBZ ValueAnnotation=VBZ] Phrasal? false Terminal? false
+Node 7 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PP ValueAnnotation=PP] Phrasal? true Terminal? false
+Node 8 has label [ValueAnnotation=. TextAnnotation=. CharacterOffsetBeginAnnotation=82 CharacterOffsetEndAnnotation=83] Phrasal? false Terminal? true
+Node 9 has label [ValueAnnotation=It TextAnnotation=It CharacterOffsetBeginAnnotation=0 CharacterOffsetEndAnnotation=2] Phrasal? false Terminal? true
+Node 10 has label [ValueAnnotation=looks TextAnnotation=looks CharacterOffsetBeginAnnotation=3 CharacterOffsetEndAnnotation=8] Phrasal? false Terminal? true
+Node 11 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 12 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 13 has label [ValueAnnotation=like TextAnnotation=like CharacterOffsetBeginAnnotation=9 CharacterOffsetEndAnnotation=13] Phrasal? false Terminal? true
+Node 14 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 15 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 16 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP$ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP$ ValueAnnotation=PRP$] Phrasal? false Terminal? false
+Node 17 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 18 has label [TextAnnotation=null PartOfSpeechAnnotation=VBN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBN ValueAnnotation=VBN] Phrasal? false Terminal? false
+Node 19 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PP ValueAnnotation=PP] Phrasal? true Terminal? false
+Node 20 has label [ValueAnnotation=your TextAnnotation=your CharacterOffsetBeginAnnotation=14 CharacterOffsetEndAnnotation=18] Phrasal? false Terminal? true
+Node 21 has label [ValueAnnotation=face TextAnnotation=face CharacterOffsetBeginAnnotation=19 CharacterOffsetEndAnnotation=23] Phrasal? false Terminal? true
+Node 22 has label [ValueAnnotation=caught TextAnnotation=caught CharacterOffsetBeginAnnotation=24 CharacterOffsetEndAnnotation=30] Phrasal? false Terminal? true
+Node 23 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 24 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 25 has label [ValueAnnotation=on TextAnnotation=on CharacterOffsetBeginAnnotation=31 CharacterOffsetEndAnnotation=33] Phrasal? false Terminal? true
+Node 26 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 27 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 28 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 29 has label [TextAnnotation=null PartOfSpeechAnnotation=CC CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=CC ValueAnnotation=CC] Phrasal? false Terminal? false
+Node 30 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 31 has label [TextAnnotation=null PartOfSpeechAnnotation=VBN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBN ValueAnnotation=VBN] Phrasal? false Terminal? false
+Node 32 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 33 has label [ValueAnnotation=fire TextAnnotation=fire CharacterOffsetBeginAnnotation=34 CharacterOffsetEndAnnotation=38] Phrasal? false Terminal? true
+Node 34 has label [ValueAnnotation=and TextAnnotation=and CharacterOffsetBeginAnnotation=39 CharacterOffsetEndAnnotation=42] Phrasal? false Terminal? true
+Node 35 has label [ValueAnnotation=someone TextAnnotation=someone CharacterOffsetBeginAnnotation=43 CharacterOffsetEndAnnotation=50] Phrasal? false Terminal? true
+Node 36 has label [ValueAnnotation=tried TextAnnotation=tried CharacterOffsetBeginAnnotation=51 CharacterOffsetEndAnnotation=56] Phrasal? false Terminal? true
+Node 37 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 38 has label [TextAnnotation=null PartOfSpeechAnnotation=TO CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=TO ValueAnnotation=TO] Phrasal? false Terminal? false
+Node 39 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 40 has label [ValueAnnotation=to TextAnnotation=to CharacterOffsetBeginAnnotation=57 CharacterOffsetEndAnnotation=59] Phrasal? false Terminal? true
+Node 41 has label [TextAnnotation=null PartOfSpeechAnnotation=VB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VB ValueAnnotation=VB] Phrasal? false Terminal? false
+Node 42 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 43 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRT ValueAnnotation=PRT] Phrasal? true Terminal? false
+Node 44 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PP ValueAnnotation=PP] Phrasal? true Terminal? false
+Node 45 has label [ValueAnnotation=put TextAnnotation=put CharacterOffsetBeginAnnotation=60 CharacterOffsetEndAnnotation=63] Phrasal? false Terminal? true
+Node 46 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 47 has label [TextAnnotation=null PartOfSpeechAnnotation=RP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=RP ValueAnnotation=RP] Phrasal? false Terminal? false
+Node 48 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 49 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 50 has label [ValueAnnotation=it TextAnnotation=it CharacterOffsetBeginAnnotation=64 CharacterOffsetEndAnnotation=66] Phrasal? false Terminal? true
+Node 51 has label [ValueAnnotation=out TextAnnotation=out CharacterOffsetBeginAnnotation=67 CharacterOffsetEndAnnotation=70] Phrasal? false Terminal? true
+Node 52 has label [ValueAnnotation=with TextAnnotation=with CharacterOffsetBeginAnnotation=71 CharacterOffsetEndAnnotation=75] Phrasal? false Terminal? true
+Node 53 has label [TextAnnotation=null PartOfSpeechAnnotation=DT CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=DT ValueAnnotation=DT] Phrasal? false Terminal? false
+Node 54 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 55 has label [ValueAnnotation=a TextAnnotation=a CharacterOffsetBeginAnnotation=76 CharacterOffsetEndAnnotation=77] Phrasal? false Terminal? true
+Node 56 has label [ValueAnnotation=fork TextAnnotation=fork CharacterOffsetBeginAnnotation=78 CharacterOffsetEndAnnotation=82] Phrasal? false Terminal? true
+DONE WITH TREE EXPLORATION
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ looks)
+      (PP (IN like)
+        (NP
+          (NP (PRP$ your) (NN face))
+          (VP (VBN caught)
+            (PP (IN on)
+              (NP
+                (NP (NN fire)
+                  (CC and)
+                  (NN someone))
+                (VP (VBN tried)
+                  (S
+                    (VP (TO to)
+                      (VP (VB put)
+                        (NP (PRP it))
+                        (PRT (RP out))
+                        (PP (IN with)
+                          (NP (DT a) (NN fork)))))))))))))
+    (. .)))
+
+[nsubj(looks-2, It-1), root(ROOT-0, looks-2), poss(face-5, your-4), prep_like(looks-2, face-5), partmod(face-5, caught-6), prep_on(caught-6, fire-8), xsubj(put-13, fire-8), prep_on(caught-6, someone-10), conj_and(fire-8, someone-10), xsubj(put-13, someone-10), partmod(fire-8, tried-11), aux(put-13, to-12), xcomp(tried-11, put-13), dobj(put-13, it-14), prt(put-13, out-15), det(fork-18, a-17), prep_with(put-13, fork-18)](ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ looks)
+      (PP (IN like)
+        (NP
+          (NP (PRP$ your) (NN face))
+          (VP (VBN caught)
+            (PP (IN on)
+              (NP
+                (NP (NN fire)
+                  (CC and)
+                  (NN someone))
+                (VP (VBN tried)
+                  (S
+                    (VP (TO to)
+                      (VP (VB put)
+                        (NP (PRP it))
+                        (PRT (RP out))
+                        (PP (IN with)
+                          (NP (DT a) (NN fork)))))))))))))
+    (. .)))
+
+nsubj(looks-2, It-1)
+root(ROOT-0, looks-2)
+poss(face-5, your-4)
+prep_like(looks-2, face-5)
+partmod(face-5, caught-6)
+prep_on(caught-6, fire-8)
+xsubj(put-13, fire-8)
+prep_on(caught-6, someone-10)
+conj_and(fire-8, someone-10)
+xsubj(put-13, someone-10)
+partmod(fire-8, tried-11)
+aux(put-13, to-12)
+xcomp(tried-11, put-13)
+dobj(put-13, it-14)
+prt(put-13, out-15)
+det(fork-18, a-17)
+prep_with(put-13, fork-18)
+
+
+STARTING TREE EXPLORATION
+Node 0 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ROOT ValueAnnotation=ROOT] Phrasal? true Terminal? false
+Node 1 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 2 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 3 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 4 has label [TextAnnotation=null PartOfSpeechAnnotation=. CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=. ValueAnnotation=.] Phrasal? false Terminal? false
+Node 5 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 6 has label [TextAnnotation=null PartOfSpeechAnnotation=VBP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBP ValueAnnotation=VBP] Phrasal? false Terminal? false
+Node 7 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ADJP ValueAnnotation=ADJP] Phrasal? true Terminal? false
+Node 8 has label [ValueAnnotation=. TextAnnotation=. CharacterOffsetBeginAnnotation=48 CharacterOffsetEndAnnotation=49] Phrasal? false Terminal? true
+Node 9 has label [ValueAnnotation=You TextAnnotation=You CharacterOffsetBeginAnnotation=0 CharacterOffsetEndAnnotation=3] Phrasal? false Terminal? true
+Node 10 has label [ValueAnnotation='re TextAnnotation='re CharacterOffsetBeginAnnotation=3 CharacterOffsetEndAnnotation=6] Phrasal? false Terminal? true
+Node 11 has label [TextAnnotation=null PartOfSpeechAnnotation=RB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=RB ValueAnnotation=RB] Phrasal? false Terminal? false
+Node 12 has label [TextAnnotation=null PartOfSpeechAnnotation=JJ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=JJ ValueAnnotation=JJ] Phrasal? false Terminal? false
+Node 13 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=SBAR ValueAnnotation=SBAR] Phrasal? true Terminal? false
+Node 14 has label [ValueAnnotation=so TextAnnotation=so CharacterOffsetBeginAnnotation=7 CharacterOffsetEndAnnotation=9] Phrasal? false Terminal? true
+Node 15 has label [ValueAnnotation=ugly TextAnnotation=ugly CharacterOffsetBeginAnnotation=10 CharacterOffsetEndAnnotation=14] Phrasal? false Terminal? true
+Node 16 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 17 has label [TextAnnotation=null PartOfSpeechAnnotation=`` CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=`` ValueAnnotation=``] Phrasal? false Terminal? false
+Node 18 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 19 has label [TextAnnotation=null PartOfSpeechAnnotation='' CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation='' ValueAnnotation=''] Phrasal? false Terminal? false
+Node 20 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 21 has label [ValueAnnotation=`` TextAnnotation=`` CharacterOffsetBeginAnnotation=15 CharacterOffsetEndAnnotation=16] Phrasal? false Terminal? true
+Node 22 has label [TextAnnotation=null PartOfSpeechAnnotation=NNP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NNP ValueAnnotation=NNP] Phrasal? false Terminal? false
+Node 23 has label [TextAnnotation=null PartOfSpeechAnnotation=NNP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NNP ValueAnnotation=NNP] Phrasal? false Terminal? false
+Node 24 has label [ValueAnnotation='' TextAnnotation='' CharacterOffsetBeginAnnotation=27 CharacterOffsetEndAnnotation=28] Phrasal? false Terminal? true
+Node 25 has label [TextAnnotation=null PartOfSpeechAnnotation=VBD CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBD ValueAnnotation=VBD] Phrasal? false Terminal? false
+Node 26 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 27 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PP ValueAnnotation=PP] Phrasal? true Terminal? false
+Node 28 has label [ValueAnnotation=Hello TextAnnotation=Hello CharacterOffsetBeginAnnotation=16 CharacterOffsetEndAnnotation=21] Phrasal? false Terminal? true
+Node 29 has label [ValueAnnotation=Kitty TextAnnotation=Kitty CharacterOffsetBeginAnnotation=22 CharacterOffsetEndAnnotation=27] Phrasal? false Terminal? true
+Node 30 has label [ValueAnnotation=said TextAnnotation=said CharacterOffsetBeginAnnotation=29 CharacterOffsetEndAnnotation=33] Phrasal? false Terminal? true
+Node 31 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 32 has label [TextAnnotation=null PartOfSpeechAnnotation=TO CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=TO ValueAnnotation=TO] Phrasal? false Terminal? false
+Node 33 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 34 has label [ValueAnnotation=goodbye TextAnnotation=goodbye CharacterOffsetBeginAnnotation=34 CharacterOffsetEndAnnotation=41] Phrasal? false Terminal? true
+Node 35 has label [ValueAnnotation=to TextAnnotation=to CharacterOffsetBeginAnnotation=42 CharacterOffsetEndAnnotation=44] Phrasal? false Terminal? true
+Node 36 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 37 has label [ValueAnnotation=you TextAnnotation=you CharacterOffsetBeginAnnotation=45 CharacterOffsetEndAnnotation=48] Phrasal? false Terminal? true
+DONE WITH TREE EXPLORATION
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (ADJP (RB so) (JJ ugly)
+        (SBAR
+          (S (`` ``)
+            (NP (NNP Hello) (NNP Kitty))
+            ('' '')
+            (VP (VBD said)
+              (NP (NN goodbye))
+              (PP (TO to)
+                (NP (PRP you))))))))
+    (. .)))
+
+[nsubj(ugly-4, You-1), cop(ugly-4, 're-2), advmod(ugly-4, so-3), root(ROOT-0, ugly-4), nn(Kitty-7, Hello-6), nsubj(said-9, Kitty-7), ccomp(ugly-4, said-9), dobj(said-9, goodbye-10), prep_to(said-9, you-12)](ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (ADJP (RB so) (JJ ugly)
+        (SBAR
+          (S (`` ``)
+            (NP (NNP Hello) (NNP Kitty))
+            ('' '')
+            (VP (VBD said)
+              (NP (NN goodbye))
+              (PP (TO to)
+                (NP (PRP you))))))))
+    (. .)))
+
+nsubj(ugly-4, You-1)
+cop(ugly-4, 're-2)
+advmod(ugly-4, so-3)
+root(ROOT-0, ugly-4)
+nn(Kitty-7, Hello-6)
+nsubj(said-9, Kitty-7)
+ccomp(ugly-4, said-9)
+dobj(said-9, goodbye-10)
+prep_to(said-9, you-12)
+
+
+STARTING TREE EXPLORATION
+Node 0 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ROOT ValueAnnotation=ROOT] Phrasal? true Terminal? false
+Node 1 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 2 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=SBAR ValueAnnotation=SBAR] Phrasal? true Terminal? false
+Node 3 has label [TextAnnotation=null PartOfSpeechAnnotation=, CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=, ValueAnnotation=,] Phrasal? false Terminal? false
+Node 4 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 5 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 6 has label [TextAnnotation=null PartOfSpeechAnnotation=. CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=. ValueAnnotation=.] Phrasal? false Terminal? false
+Node 7 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 8 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 9 has label [ValueAnnotation=, TextAnnotation=, CharacterOffsetBeginAnnotation=26 CharacterOffsetEndAnnotation=27] Phrasal? false Terminal? true
+Node 10 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 11 has label [TextAnnotation=null PartOfSpeechAnnotation=MD CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=MD ValueAnnotation=MD] Phrasal? false Terminal? false
+Node 12 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ADVP ValueAnnotation=ADVP] Phrasal? true Terminal? false
+Node 13 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 14 has label [ValueAnnotation=. TextAnnotation=. CharacterOffsetBeginAnnotation=49 CharacterOffsetEndAnnotation=50] Phrasal? false Terminal? true
+Node 15 has label [ValueAnnotation=If TextAnnotation=If CharacterOffsetBeginAnnotation=0 CharacterOffsetEndAnnotation=2] Phrasal? false Terminal? true
+Node 16 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 17 has label [ValueAnnotation=you TextAnnotation=you CharacterOffsetBeginAnnotation=28 CharacterOffsetEndAnnotation=31] Phrasal? false Terminal? true
+Node 18 has label [ValueAnnotation='d TextAnnotation='d CharacterOffsetBeginAnnotation=31 CharacterOffsetEndAnnotation=33] Phrasal? false Terminal? true
+Node 19 has label [TextAnnotation=null PartOfSpeechAnnotation=RB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=RB ValueAnnotation=RB] Phrasal? false Terminal? false
+Node 20 has label [TextAnnotation=null PartOfSpeechAnnotation=VB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VB ValueAnnotation=VB] Phrasal? false Terminal? false
+Node 21 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ADJP ValueAnnotation=ADJP] Phrasal? true Terminal? false
+Node 22 has label [TextAnnotation=null PartOfSpeechAnnotation=VBD CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBD ValueAnnotation=VBD] Phrasal? false Terminal? false
+Node 23 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ADVP ValueAnnotation=ADVP] Phrasal? true Terminal? false
+Node 24 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ADJP ValueAnnotation=ADJP] Phrasal? true Terminal? false
+Node 25 has label [ValueAnnotation=still TextAnnotation=still CharacterOffsetBeginAnnotation=34 CharacterOffsetEndAnnotation=39] Phrasal? false Terminal? true
+Node 26 has label [ValueAnnotation=be TextAnnotation=be CharacterOffsetBeginAnnotation=40 CharacterOffsetEndAnnotation=42] Phrasal? false Terminal? true
+Node 27 has label [TextAnnotation=null PartOfSpeechAnnotation=JJ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=JJ ValueAnnotation=JJ] Phrasal? false Terminal? false
+Node 28 has label [ValueAnnotation=were TextAnnotation=were CharacterOffsetBeginAnnotation=7 CharacterOffsetEndAnnotation=11] Phrasal? false Terminal? true
+Node 29 has label [TextAnnotation=null PartOfSpeechAnnotation=RB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=RB ValueAnnotation=RB] Phrasal? false Terminal? false
+Node 30 has label [TextAnnotation=null PartOfSpeechAnnotation=RB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=RB ValueAnnotation=RB] Phrasal? false Terminal? false
+Node 31 has label [TextAnnotation=null PartOfSpeechAnnotation=JJ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=JJ ValueAnnotation=JJ] Phrasal? false Terminal? false
+Node 32 has label [ValueAnnotation=stupid TextAnnotation=stupid CharacterOffsetBeginAnnotation=43 CharacterOffsetEndAnnotation=49] Phrasal? false Terminal? true
+Node 33 has label [ValueAnnotation=twice TextAnnotation=twice CharacterOffsetBeginAnnotation=12 CharacterOffsetEndAnnotation=17] Phrasal? false Terminal? true
+Node 34 has label [ValueAnnotation=as TextAnnotation=as CharacterOffsetBeginAnnotation=18 CharacterOffsetEndAnnotation=20] Phrasal? false Terminal? true
+Node 35 has label [ValueAnnotation=smart TextAnnotation=smart CharacterOffsetBeginAnnotation=21 CharacterOffsetEndAnnotation=26] Phrasal? false Terminal? true
+DONE WITH TREE EXPLORATION
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBD were)
+          (ADVP (RB twice))
+          (ADJP (RB as) (JJ smart)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD 'd)
+      (ADVP (RB still))
+      (VP (VB be)
+        (ADJP (JJ stupid))))
+    (. .)))
+
+[mark(smart-6, If-1), nsubj(smart-6, you-2), cop(smart-6, were-3), advmod(smart-6, twice-4), advmod(smart-6, as-5), advcl(stupid-12, smart-6), nsubj(stupid-12, you-8), aux(stupid-12, 'd-9), advmod(stupid-12, still-10), cop(stupid-12, be-11), root(ROOT-0, stupid-12)](ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBD were)
+          (ADVP (RB twice))
+          (ADJP (RB as) (JJ smart)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD 'd)
+      (ADVP (RB still))
+      (VP (VB be)
+        (ADJP (JJ stupid))))
+    (. .)))
+
+mark(smart-6, If-1)
+nsubj(smart-6, you-2)
+cop(smart-6, were-3)
+advmod(smart-6, twice-4)
+advmod(smart-6, as-5)
+advcl(stupid-12, smart-6)
+nsubj(stupid-12, you-8)
+aux(stupid-12, 'd-9)
+advmod(stupid-12, still-10)
+cop(stupid-12, be-11)
+root(ROOT-0, stupid-12)
+
+
+STARTING TREE EXPLORATION
+Node 0 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ROOT ValueAnnotation=ROOT] Phrasal? true Terminal? false
+Node 1 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 2 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 3 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 4 has label [TextAnnotation=null PartOfSpeechAnnotation=. CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=. ValueAnnotation=.] Phrasal? false Terminal? false
+Node 5 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 6 has label [TextAnnotation=null PartOfSpeechAnnotation=VBP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBP ValueAnnotation=VBP] Phrasal? false Terminal? false
+Node 7 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ADJP ValueAnnotation=ADJP] Phrasal? true Terminal? false
+Node 8 has label [ValueAnnotation=. TextAnnotation=. CharacterOffsetBeginAnnotation=88 CharacterOffsetEndAnnotation=89] Phrasal? false Terminal? true
+Node 9 has label [ValueAnnotation=You TextAnnotation=You CharacterOffsetBeginAnnotation=0 CharacterOffsetEndAnnotation=3] Phrasal? false Terminal? true
+Node 10 has label [ValueAnnotation=are TextAnnotation=are CharacterOffsetBeginAnnotation=4 CharacterOffsetEndAnnotation=7] Phrasal? false Terminal? true
+Node 11 has label [TextAnnotation=null PartOfSpeechAnnotation=RB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=RB ValueAnnotation=RB] Phrasal? false Terminal? false
+Node 12 has label [TextAnnotation=null PartOfSpeechAnnotation=JJ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=JJ ValueAnnotation=JJ] Phrasal? false Terminal? false
+Node 13 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=SBAR ValueAnnotation=SBAR] Phrasal? true Terminal? false
+Node 14 has label [ValueAnnotation=so TextAnnotation=so CharacterOffsetBeginAnnotation=8 CharacterOffsetEndAnnotation=10] Phrasal? false Terminal? true
+Node 15 has label [ValueAnnotation=ugly TextAnnotation=ugly CharacterOffsetBeginAnnotation=11 CharacterOffsetEndAnnotation=15] Phrasal? false Terminal? true
+Node 16 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 17 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 18 has label [ValueAnnotation=that TextAnnotation=that CharacterOffsetBeginAnnotation=16 CharacterOffsetEndAnnotation=20] Phrasal? false Terminal? true
+Node 19 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=SBAR ValueAnnotation=SBAR] Phrasal? true Terminal? false
+Node 20 has label [TextAnnotation=null PartOfSpeechAnnotation=, CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=, ValueAnnotation=,] Phrasal? false Terminal? false
+Node 21 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 22 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 23 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=WHADVP ValueAnnotation=WHADVP] Phrasal? true Terminal? false
+Node 24 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 25 has label [ValueAnnotation=, TextAnnotation=, CharacterOffsetBeginAnnotation=59 CharacterOffsetEndAnnotation=60] Phrasal? false Terminal? true
+Node 26 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 27 has label [TextAnnotation=null PartOfSpeechAnnotation=VBD CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBD ValueAnnotation=VBD] Phrasal? false Terminal? false
+Node 28 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 29 has label [TextAnnotation=null PartOfSpeechAnnotation=WRB CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=WRB ValueAnnotation=WRB] Phrasal? false Terminal? false
+Node 30 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 31 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 32 has label [ValueAnnotation=she TextAnnotation=she CharacterOffsetBeginAnnotation=61 CharacterOffsetEndAnnotation=64] Phrasal? false Terminal? true
+Node 33 has label [ValueAnnotation=got TextAnnotation=got CharacterOffsetBeginAnnotation=65 CharacterOffsetEndAnnotation=68] Phrasal? false Terminal? true
+Node 34 has label [TextAnnotation=null PartOfSpeechAnnotation=VBN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBN ValueAnnotation=VBN] Phrasal? false Terminal? false
+Node 35 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PP ValueAnnotation=PP] Phrasal? true Terminal? false
+Node 36 has label [ValueAnnotation=when TextAnnotation=when CharacterOffsetBeginAnnotation=21 CharacterOffsetEndAnnotation=25] Phrasal? false Terminal? true
+Node 37 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP$ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP$ ValueAnnotation=PRP$] Phrasal? false Terminal? false
+Node 38 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 39 has label [TextAnnotation=null PartOfSpeechAnnotation=VBD CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBD ValueAnnotation=VBD] Phrasal? false Terminal? false
+Node 40 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 41 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PP ValueAnnotation=PP] Phrasal? true Terminal? false
+Node 42 has label [ValueAnnotation=fined TextAnnotation=fined CharacterOffsetBeginAnnotation=69 CharacterOffsetEndAnnotation=74] Phrasal? false Terminal? true
+Node 43 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 44 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 45 has label [ValueAnnotation=your TextAnnotation=your CharacterOffsetBeginAnnotation=26 CharacterOffsetEndAnnotation=30] Phrasal? false Terminal? true
+Node 46 has label [ValueAnnotation=mother TextAnnotation=mother CharacterOffsetBeginAnnotation=31 CharacterOffsetEndAnnotation=37] Phrasal? false Terminal? true
+Node 47 has label [ValueAnnotation=dropped TextAnnotation=dropped CharacterOffsetBeginAnnotation=38 CharacterOffsetEndAnnotation=45] Phrasal? false Terminal? true
+Node 48 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 49 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 50 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 51 has label [ValueAnnotation=for TextAnnotation=for CharacterOffsetBeginAnnotation=75 CharacterOffsetEndAnnotation=78] Phrasal? false Terminal? true
+Node 52 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 53 has label [ValueAnnotation=you TextAnnotation=you CharacterOffsetBeginAnnotation=46 CharacterOffsetEndAnnotation=49] Phrasal? false Terminal? true
+Node 54 has label [ValueAnnotation=at TextAnnotation=at CharacterOffsetBeginAnnotation=50 CharacterOffsetEndAnnotation=52] Phrasal? false Terminal? true
+Node 55 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 56 has label [ValueAnnotation=littering TextAnnotation=littering CharacterOffsetBeginAnnotation=79 CharacterOffsetEndAnnotation=88] Phrasal? false Terminal? true
+Node 57 has label [ValueAnnotation=school TextAnnotation=school CharacterOffsetBeginAnnotation=53 CharacterOffsetEndAnnotation=59] Phrasal? false Terminal? true
+DONE WITH TREE EXPLORATION
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (ADJP (RB so) (JJ ugly)
+        (SBAR (IN that)
+          (S
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP$ your) (NN mother))
+                (VP (VBD dropped)
+                  (NP (PRP you))
+                  (PP (IN at)
+                    (NP (NN school))))))
+            (, ,)
+            (NP (PRP she))
+            (VP (VBD got)
+              (VP (VBN fined)
+                (PP (IN for)
+                  (NP (NN littering)))))))))
+    (. .)))
+
+[nsubj(ugly-4, You-1), cop(ugly-4, are-2), advmod(ugly-4, so-3), root(ROOT-0, ugly-4), complm(fined-16, that-5), advmod(dropped-9, when-6), poss(mother-8, your-7), nsubj(dropped-9, mother-8), advcl(fined-16, dropped-9), dobj(dropped-9, you-10), prep_at(dropped-9, school-12), nsubjpass(fined-16, she-14), auxpass(fined-16, got-15), ccomp(ugly-4, fined-16), prep_for(fined-16, littering-18)](ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (ADJP (RB so) (JJ ugly)
+        (SBAR (IN that)
+          (S
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP$ your) (NN mother))
+                (VP (VBD dropped)
+                  (NP (PRP you))
+                  (PP (IN at)
+                    (NP (NN school))))))
+            (, ,)
+            (NP (PRP she))
+            (VP (VBD got)
+              (VP (VBN fined)
+                (PP (IN for)
+                  (NP (NN littering)))))))))
+    (. .)))
+
+nsubj(ugly-4, You-1)
+cop(ugly-4, are-2)
+advmod(ugly-4, so-3)
+root(ROOT-0, ugly-4)
+complm(fined-16, that-5)
+advmod(dropped-9, when-6)
+poss(mother-8, your-7)
+nsubj(dropped-9, mother-8)
+advcl(fined-16, dropped-9)
+dobj(dropped-9, you-10)
+prep_at(dropped-9, school-12)
+nsubjpass(fined-16, she-14)
+auxpass(fined-16, got-15)
+ccomp(ugly-4, fined-16)
+prep_for(fined-16, littering-18)
+
+
+STARTING TREE EXPLORATION
+Node 0 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ROOT ValueAnnotation=ROOT] Phrasal? true Terminal? false
+Node 1 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 2 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 3 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 4 has label [TextAnnotation=null PartOfSpeechAnnotation=. CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=. ValueAnnotation=.] Phrasal? false Terminal? false
+Node 5 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 6 has label [TextAnnotation=null PartOfSpeechAnnotation=VBP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBP ValueAnnotation=VBP] Phrasal? false Terminal? false
+Node 7 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 8 has label [ValueAnnotation=. TextAnnotation=. CharacterOffsetBeginAnnotation=17 CharacterOffsetEndAnnotation=18] Phrasal? false Terminal? true
+Node 9 has label [ValueAnnotation=You TextAnnotation=You CharacterOffsetBeginAnnotation=0 CharacterOffsetEndAnnotation=3] Phrasal? false Terminal? true
+Node 10 has label [ValueAnnotation=are TextAnnotation=are CharacterOffsetBeginAnnotation=4 CharacterOffsetEndAnnotation=7] Phrasal? false Terminal? true
+Node 11 has label [TextAnnotation=null PartOfSpeechAnnotation=DT CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=DT ValueAnnotation=DT] Phrasal? false Terminal? false
+Node 12 has label [TextAnnotation=null PartOfSpeechAnnotation=NNS CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NNS ValueAnnotation=NNS] Phrasal? false Terminal? false
+Node 13 has label [ValueAnnotation=a TextAnnotation=a CharacterOffsetBeginAnnotation=8 CharacterOffsetEndAnnotation=9] Phrasal? false Terminal? true
+Node 14 has label [ValueAnnotation=dumbass TextAnnotation=dumbass CharacterOffsetBeginAnnotation=10 CharacterOffsetEndAnnotation=17] Phrasal? false Terminal? true
+DONE WITH TREE EXPLORATION
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (NP (DT a) (NNS dumbass)))
+    (. .)))
+
+[nsubj(dumbass-4, You-1), cop(dumbass-4, are-2), det(dumbass-4, a-3), root(ROOT-0, dumbass-4)](ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (NP (DT a) (NNS dumbass)))
+    (. .)))
+
+nsubj(dumbass-4, You-1)
+cop(dumbass-4, are-2)
+det(dumbass-4, a-3)
+root(ROOT-0, dumbass-4)
+
+
+STARTING TREE EXPLORATION
+Node 0 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=ROOT ValueAnnotation=ROOT] Phrasal? true Terminal? false
+Node 1 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 2 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 3 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 4 has label [TextAnnotation=null PartOfSpeechAnnotation=. CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=. ValueAnnotation=.] Phrasal? false Terminal? false
+Node 5 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP$ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP$ ValueAnnotation=PRP$] Phrasal? false Terminal? false
+Node 6 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 7 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 8 has label [TextAnnotation=null PartOfSpeechAnnotation=VBZ CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VBZ ValueAnnotation=VBZ] Phrasal? false Terminal? false
+Node 9 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 10 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=SBAR ValueAnnotation=SBAR] Phrasal? true Terminal? false
+Node 11 has label [ValueAnnotation=. TextAnnotation=. CharacterOffsetBeginAnnotation=62 CharacterOffsetEndAnnotation=63] Phrasal? false Terminal? true
+Node 12 has label [ValueAnnotation=Your TextAnnotation=Your CharacterOffsetBeginAnnotation=0 CharacterOffsetEndAnnotation=4] Phrasal? false Terminal? true
+Node 13 has label [ValueAnnotation=family TextAnnotation=family CharacterOffsetBeginAnnotation=5 CharacterOffsetEndAnnotation=11] Phrasal? false Terminal? true
+Node 14 has label [ValueAnnotation=tree TextAnnotation=tree CharacterOffsetBeginAnnotation=12 CharacterOffsetEndAnnotation=16] Phrasal? false Terminal? true
+Node 15 has label [ValueAnnotation=is TextAnnotation=is CharacterOffsetBeginAnnotation=17 CharacterOffsetEndAnnotation=19] Phrasal? false Terminal? true
+Node 16 has label [TextAnnotation=null PartOfSpeechAnnotation=DT CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=DT ValueAnnotation=DT] Phrasal? false Terminal? false
+Node 17 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 18 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 19 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=S ValueAnnotation=S] Phrasal? true Terminal? false
+Node 20 has label [ValueAnnotation=a TextAnnotation=a CharacterOffsetBeginAnnotation=20 CharacterOffsetEndAnnotation=21] Phrasal? false Terminal? true
+Node 21 has label [ValueAnnotation=cactus TextAnnotation=cactus CharacterOffsetBeginAnnotation=22 CharacterOffsetEndAnnotation=28] Phrasal? false Terminal? true
+Node 22 has label [ValueAnnotation=because TextAnnotation=because CharacterOffsetBeginAnnotation=29 CharacterOffsetEndAnnotation=36] Phrasal? false Terminal? true
+Node 23 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 24 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=VP ValueAnnotation=VP] Phrasal? true Terminal? false
+Node 25 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 26 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PP ValueAnnotation=PP] Phrasal? true Terminal? false
+Node 27 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 28 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 29 has label [TextAnnotation=null PartOfSpeechAnnotation=IN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=IN ValueAnnotation=IN] Phrasal? false Terminal? false
+Node 30 has label [TextAnnotation=null PartOfSpeechAnnotation=null CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NP ValueAnnotation=NP] Phrasal? true Terminal? false
+Node 31 has label [TextAnnotation=null PartOfSpeechAnnotation=NN CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=NN ValueAnnotation=NN] Phrasal? false Terminal? false
+Node 32 has label [ValueAnnotation=everyone TextAnnotation=everyone CharacterOffsetBeginAnnotation=37 CharacterOffsetEndAnnotation=45] Phrasal? false Terminal? true
+Node 33 has label [ValueAnnotation=on TextAnnotation=on CharacterOffsetBeginAnnotation=46 CharacterOffsetEndAnnotation=48] Phrasal? false Terminal? true
+Node 34 has label [TextAnnotation=null PartOfSpeechAnnotation=PRP CharacterOffsetBeginAnnotation=-1 CharacterOffsetEndAnnotation=-1 CategoryAnnotation=PRP ValueAnnotation=PRP] Phrasal? false Terminal? false
+Node 35 has label [ValueAnnotation=prick TextAnnotation=prick CharacterOffsetBeginAnnotation=57 CharacterOffsetEndAnnotation=62] Phrasal? false Terminal? true
+Node 36 has label [ValueAnnotation=it TextAnnotation=it CharacterOffsetBeginAnnotation=49 CharacterOffsetEndAnnotation=51] Phrasal? false Terminal? true
+DONE WITH TREE EXPLORATION
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN family) (NN tree))
+    (VP (VBZ is)
+      (NP (DT a) (NN cactus))
+      (SBAR (IN because)
+        (S
+          (NP
+            (NP (NN everyone))
+            (PP (IN on)
+              (NP (PRP it))))
+          (VP (VBZ is)
+            (NP (DT a) (NN prick))))))
+    (. .)))
+
+[poss(tree-3, Your-1), nn(tree-3, family-2), nsubj(cactus-6, tree-3), cop(cactus-6, is-4), det(cactus-6, a-5), root(ROOT-0, cactus-6), mark(prick-13, because-7), nsubj(prick-13, everyone-8), prep_on(everyone-8, it-10), cop(prick-13, is-11), det(prick-13, a-12), advcl(cactus-6, prick-13)](ROOT
+  (S
+    (NP (PRP$ Your) (NN family) (NN tree))
+    (VP (VBZ is)
+      (NP (DT a) (NN cactus))
+      (SBAR (IN because)
+        (S
+          (NP
+            (NP (NN everyone))
+            (PP (IN on)
+              (NP (PRP it))))
+          (VP (VBZ is)
+            (NP (DT a) (NN prick))))))
+    (. .)))
+
+poss(tree-3, Your-1)
+nn(tree-3, family-2)
+nsubj(cactus-6, tree-3)
+cop(cactus-6, is-4)
+det(cactus-6, a-5)
+root(ROOT-0, cactus-6)
+mark(prick-13, because-7)
+nsubj(prick-13, everyone-8)
+prep_on(everyone-8, it-10)
+cop(prick-13, is-11)
+det(prick-13, a-12)
+advcl(cactus-6, prick-13)
+

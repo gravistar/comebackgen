@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Version: 2.0.4
+Created-By: Stanford JavaNLP (horatio)
+Built-Date: 2012-11-12
+
