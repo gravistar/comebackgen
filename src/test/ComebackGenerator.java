@@ -20,13 +20,14 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 
+import edu.stanford.nlp.ling.Word;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 import edu.stanford.nlp.trees.GrammaticalStructureFactory;
 import edu.stanford.nlp.trees.PennTreebankLanguagePack;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreebankLanguagePack;
 
-class ParserDemo {
+class ComebackGenerator {
 
 	private static final String BANK_PATH = "bank/";
 	private static final String DATA_PATH = "data/";
@@ -65,10 +66,8 @@ class ParserDemo {
 		String line,tagged;
 		while ((line = in.readLine()) != null) {
 			parseSentence(line, out, callback);
-
-			// Output the result
-			out.write('\n');
 		}
+		out.close();
 		in.close();
 	}
 	
@@ -81,7 +80,8 @@ class ParserDemo {
 		return callback.apply(sentence, out);
 	}
 	
-	private static Set<String> verbs = Sets.newHashSet(Arrays.asList("VB", "VBG", "VBD"));
+	private static Set<String> verbs = Sets.newHashSet(Arrays.asList("VP","VB", "VBG", "VBD"));
+	private static Set<String> nouns = Sets.newHashSet(Arrays.asList("NP","NNS", "NN"));
 	private static Set<String> restricted = Sets.newHashSet(Arrays.asList("You", "you", "Your", "your", "I", "my"));
 	private static Map<String, Set<Tree>> substitutionBank; // key: either a tagged value or CFG value
 														   // value: a list of trees from the bank who have the key as their root label
@@ -160,10 +160,25 @@ class ParserDemo {
 		
 		int index = 0;
 		for (Tree node : nodes) {
+			if (!replacement.value().equals("NP") && !verbs.contains(replacement.value())) continue;
 			if (isValidReplacement(node, replacement)) {
 				Tree deepcopy = root.deepCopy();
 				List<Tree> copiedNodes = deepcopy.preOrderNodeList();
-				copiedNodes.set(index, replacement);
+				Tree toReplace = copiedNodes.get(index);
+				Tree parent = toReplace.parent(deepcopy);
+				
+				if (parent == null) {
+					replacements.add(replacement);
+					continue;
+				}
+					
+				int ci;
+				for (ci = 0; ci < parent.children().length; ci++ ) {
+					// find matching child index and replace it
+					if (parent.children() [ci] == toReplace) {
+						parent.setChild(ci, replacement);
+					}
+				}
 				replacements.add(deepcopy);
 			}
 			index++;
@@ -187,50 +202,78 @@ class ParserDemo {
 	 * @return
 	 */
 	private static boolean isValidReplacement(Tree toReplace, Tree replacement) {
-		List<Tree> toReplacePreOrder = toReplace.preOrderNodeList();
-		List<Tree> replacementPreOrder = toReplace.preOrderNodeList();
 		
-		if (toReplacePreOrder.size() != replacementPreOrder.size()) return false;
 		
-		for (int i=0; i<toReplacePreOrder.size(); i++) {
-			Tree t1 = toReplacePreOrder.get(i);
-			Tree t2 = replacementPreOrder.get(i);
+		if (toReplace.value() == replacement.value() || 
+				(verbs.contains(toReplace.value()) && verbs.contains(replacement.value())) ||
+				(nouns.contains(toReplace.value()) && nouns.contains(replacement.value()))
+			) {
+		
+			boolean usesRestricted = false;
 			
-			String value1 = t1.label().value();
-			String value2 = t2.label().value();
-			
-			// if phrasal fields dont match, bail
-			if (t1.isPhrasal() != t2.isPhrasal())
-				return false;
-			
-			// if leaf fields don't match, bail
-			if (t1.isLeaf() != t2.isLeaf())
-				return false;
-			
-			// if preterminal fields don't match, bail
-			if (t1.isPreTerminal() != t2.isPreTerminal())
-				return false;
-			
-			// if this isn't a leaf, the values must be the same UNLESS they are both verbs.
-			// then they must both be verbs.
-			// this is a questionable restriction, but let's enforce it for now
-			if (!t1.isLeaf()) {
-				if (verbs.contains(value1) ^ verbs.contains(value2))
-					return false;
-				
-				if (!verbs.contains(value1) && value1 != value2)
-					return false;
+			// check to see if it doesn't contain restricted words
+			List<Word> toReplaceWords = toReplace.yieldWords();
+			for (Word word : toReplaceWords) {
+				if (restricted.contains(word.value()))
+					usesRestricted = true;
 			}
 			
-			if (t1.isLeaf()) {
-				if (restricted.contains(value1)){
-					if (value1 != value2)
-						return false;
-				}
+			List<Word> replacementWords = replacement.yieldWords();
+			for (Word word : replacementWords) {
+				if (restricted.contains(word.value()))
+					usesRestricted = true;
 			}
+			
+			return !usesRestricted;
+			
 		}
 		
-		return true;
+		return false;
+		
+//		List<Tree> toReplacePreOrder = toReplace.preOrderNodeList();
+//		List<Tree> replacementPreOrder = replacement.preOrderNodeList();
+//		
+//		if (toReplacePreOrder.size() != replacementPreOrder.size()) return false;
+//		
+//		for (int i=0; i<toReplacePreOrder.size(); i++) {
+//			Tree t1 = toReplacePreOrder.get(i);
+//			Tree t2 = replacementPreOrder.get(i);
+//			
+//			String value1 = t1.label().value();
+//			String value2 = t2.label().value();
+//			
+//			// if phrasal fields dont match, bail
+//			if (t1.isPhrasal() != t2.isPhrasal())
+//				return false;
+//			
+//			// if leaf fields don't match, bail
+//			if (t1.isLeaf() != t2.isLeaf())
+//				return false;
+//			
+//			// if preterminal fields don't match, bail
+//			if (t1.isPreTerminal() != t2.isPreTerminal())
+//				return false;
+//			
+//			// if this isn't a leaf, the values must be the same UNLESS they are both verbs.
+//			// then they must both be verbs.
+//			// this is a questionable restriction, but let's enforce it for now
+//			if (!t1.isLeaf()) {
+//				if (verbs.contains(value1) ^ verbs.contains(value2))
+//					return false;
+//				
+//				if (!verbs.contains(value1) && value1 != value2)
+//					return false;
+//			}
+//			
+//			if (t1.isLeaf()) {
+//				if (restricted.contains(value1)){
+//					if (value1 != value2)
+//						return false;
+//				}
+//			}
+//		}
+//		
+//		return true;
 	}
 	
 	public interface TreeFn<T> {
@@ -304,13 +347,15 @@ class ParserDemo {
 						// run this on the string itself!! this is better anyway
 						Tree parse = lp.apply(sentence);
 						
-						List<Tree> roots = Lists.newArrayList(parse);
+						List<Tree> roots = Lists.newArrayList();
+						roots.add(parse);
 						
 						for (String key : substitutionBank.keySet()) {
 							Set<Tree> substitutions = substitutionBank.get(key);
 							Set<Tree> comebacks = generateAllReplacements(roots, substitutions);
 							for (Tree comeback : comebacks)
 								out.write(comeback.yieldWords().toString() + "\n");
+							System.out.format("root: %s key: %s num comebacks: %d\n", sentence, key, comebacks.size());
 						}
 						
 //						exploreTree(parse, out);
