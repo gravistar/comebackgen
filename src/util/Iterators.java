@@ -46,7 +46,7 @@ public class Iterators {
 		
 		@Override
 		public boolean hasNext() {
-			return mask == (1 << set.size());
+			return mask < (1 << set.size());
 		}
 
 		@Override
@@ -55,7 +55,7 @@ public class Iterators {
 			List<T> ret = Lists.newArrayList();
 			
 			for (int i=0; i<set.size(); i++) {
-				if ( (mask & (1 << set.size())) != 0)
+				if ( (mask & (1 << i)) != 0)
 					ret.add(set.get(i));
 				else
 					ret.add(null);

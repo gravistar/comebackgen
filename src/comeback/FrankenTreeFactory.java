@@ -17,8 +17,8 @@ import edu.stanford.nlp.trees.Tree;
 
 public class FrankenTreeFactory {
 	// Constants 
-	private static final int ITERATION_LIMIT = 10000;
-	private static final int POWERSET_LIMIT = 10000;
+	private static final int ITERATION_LIMIT = 60000;
+	private static final int POWERSET_LIMIT = 10000000;
 	
 	// 
 	public Tree template;
@@ -30,19 +30,21 @@ public class FrankenTreeFactory {
 	public FrankenTreeFactory (Tree template) {
 		this.template = template;
 		this.templateNodes = template.preOrderNodeList();
+		this.nodeToIndex = buildNodeToIndexMap();
+		this.limbventory = buildEmptyLimbventory();
 	}
 
 	public Set<Tree> generateAllFrankenTrees() {
 		ImmutableList<Tree> immTemplateNodes = ImmutableList.<Tree>builder().addAll(templateNodes).build();
 		PowerSetIterable<Tree> pit = new PowerSetIterable<Tree>(immTemplateNodes);
 		if (pit.size() > POWERSET_LIMIT) {
-			System.out.println("POWERSET LIMIT EXCEEDED");
+			System.out.println("POWERSET LIMIT EXCEEDED " + " size: " + pit.size());
 			return Sets.newHashSet();
 		}
 		Set<Tree> ret = Sets.newHashSet();
 		for (List<Tree> set : pit) {
 			
-			if (!validReplacementList(set)) continue;
+			if (!isValidReplacementList(set)) continue;
 			
 			// make limbventory
 			List<Set<Tree>> relevantLimbventory = Lists.<Set<Tree>>newArrayList();
@@ -65,7 +67,7 @@ public class FrankenTreeFactory {
 	 * @param replacementList
 	 * @return
 	 */
-	public boolean validReplacementList(List<Tree> replacementList) {
+	public boolean isValidReplacementList(List<Tree> replacementList) {
 		Preconditions.checkArgument(replacementList.size() == templateNodes.size());
 		for (int i=0; i<replacementList.size(); i++) {
 			Tree cur = replacementList.get(i);
@@ -163,13 +165,38 @@ public class FrankenTreeFactory {
 		return body;
 	}
 	
+	private Map<Tree,Integer> buildNodeToIndexMap() {
+		Map<Tree,Integer> ret = Maps.newHashMap();
+		for (int i=0; i<templateNodes.size(); i++)
+			ret.put(templateNodes.get(i), i);
+		return ret;
+	}
+	
+	private List<Set<Tree>> buildEmptyLimbventory() {
+		List<Set<Tree>> ret = Lists.newArrayList();
+		// initialize each entry to empty set
+		for (int i=0; i<templateNodes.size(); i++)
+			ret.add(Sets.<Tree>newHashSet());
+		return ret;
+	}
+	
+	/**
+	 * 
+	 * @param substitutionBank
+	 * @param fn
+	 */
 	public void buildLimbventory(Map<String, Set<Tree>> substitutionBank, ValidReplacementFn fn) {
+		List<Set<Tree>> ret = Lists.newArrayList();
+		// initialize each entry to empty set
+		for (int i=0; i<templateNodes.size(); i++)
+			ret.add(Sets.<Tree>newHashSet());
+		
 		for (Tree toReplace : templateNodes)
 			for (String key : substitutionBank.keySet()) 
 				for (Tree replacement : substitutionBank.get(key))
 					if (fn.isValid(toReplace, replacement))
-						append(toReplace, replacement);
-
+						append(toReplace, replacement, ret);
+		limbventory = ret;
 	}
 	
 	public interface ValidReplacementFn {
@@ -178,19 +205,20 @@ public class FrankenTreeFactory {
 	
 	
 	/**
-	 * Adds element to limbventory
+	 * Adds element to specified limbventory
 	 * 
 	 * @param key
 	 * @param value
+	 * @param limbventory
 	 */
-	public void append(Tree key, Tree value) {
+	public void append(Tree key, Tree value, List<Set<Tree>> limbventory) {
 		if (!nodeToIndex.keySet().contains(key)) return;
 		int index = nodeToIndex.get(key);
 		Set<Tree> values = limbventory.get(index);
 		values.add(value);
 	}
 	
-	public void append(int index, Tree value) {
+	public void append(int index, Tree value, List<Set<Tree>> limbventory) {
 		if (index < 0 || index >= templateNodes.size()) return;
 		Set<Tree> values = limbventory.get(index);
 		values.add(value);

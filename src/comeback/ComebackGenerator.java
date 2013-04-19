@@ -447,7 +447,6 @@ class ComebackGenerator {
 							}
 						});
 						
-						
 						Set<Tree> comebacks = factory.generateAllFrankenTrees();
 						
 						System.out.println("Number of comebacks generated: " + comebacks.size());
@@ -457,7 +456,6 @@ class ComebackGenerator {
 							out.write("Comeback: " + comeback.yieldWords() + "\n");
 							out.write("Original Tree: " + parse + "\n");
 							out.write("Comeback Tree: " + comeback + "\n\n");
-							
 						}
 						
 //						factory.buildLimbventory(substitutionBank);
